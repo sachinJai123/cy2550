@@ -4,7 +4,7 @@ balthasar:literature
 banquo:sxcmilly
 bobhyper:customer
 boosherha:permission
-borgui:Fi$hing
+borguitsba:Fi$hing
 bottechvaci:tension1
 capulet:Orange0
 claudius:tunnel
@@ -20,7 +20,7 @@ macduff:panther+
 malcolm:Secretary
 marcellus:disease7
 mercutio:treb123
-montagu:reading60
+montague:reading60
 paris:arriva1
 rosaline:glass3s
 rosencrantz:dayra19
@@ -34,8 +34,8 @@ streplon:Professor
 struping:zaki23
 superti:c0ncept
 tacticreport:fishing4
-tastic:tension70
+tasticsupreme:tension70
 technof:potato
 tenashlin:feb0384
 theborgitas:juicer
-barter:computer$3+
+bartercon:computer$3+
