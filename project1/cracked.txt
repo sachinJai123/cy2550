@@ -40,3 +40,5 @@ tenashlin:feb0384
 theborgitas:juicer
 bartercon:computer$3+
 lennox:membership%5
+voltimand:economics3^2_
+shakira:b@$ket
