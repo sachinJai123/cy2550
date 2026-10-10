@@ -42,3 +42,5 @@ bartercon:computer$3+
 lennox:membership%5
 voltimand:economics3^2_
 shakira:b@$ket
+peter:sandwiCh7
+gertrude:sEssion1
