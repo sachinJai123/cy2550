@@ -1,1 +1,44 @@
-
+{
+  "incident_id": "p5-sachinJai123-6bba72c5",
+  "first": {
+    "type": "backup",
+    "artifact": "/backups/granite-lagoon-jasmine.zip",
+    "time": "2026-11-02T13:10:27-05:00",
+    "guard": "sshd DenyUsers",
+    "evidence": "gcp:p5-sachinJai123-000006"
+  },
+  "second": {
+    "type": "upload",
+    "artifact": "/uploads/clover-forest-bramble-11.php",
+    "time": "2026-11-02T13:35:45-05:00",
+    "hash": "586421f912b8b791283f471fb6dbeeb1b70836223f935286b5df0129299dcf60",
+    "evidence": "/var/log/apache2/access.log:6"
+  },
+  "success": {
+    "login_time": "2026-11-02T13:36:20-05:00",
+    "account": "svc_b02878",
+    "source": "203.0.113.8",
+    "stolen": "/etc/shadow",
+    "persistence": "/usr/local/bin/meteor-cinder-blossom-1.sh",
+    "persistence_command": "17 3 * * * root /usr/local/bin/meteor-cinder-blossom-1.sh",
+    "modified": "/usr/bin/ldd",
+    "evidence": "/var/log/auth.log:13"
+  },
+  "deleted": {
+    "insert_id": "p5-sachinJai123-000019",
+    "event": "sudo: happy : TTY=notty ; PWD=/var/www/html ; USER=root ; COMMAND=/usr/sbin/useradd -m -s /bin/bash -p * svc_b02878",
+    "why": "hide the svc_b02878 account creation; local auth.log has no useradd at 13:35:51 and a duplicated CRON[908] line at lines 11-12"
+  },
+  "timeline": [
+    "2026-11-02T13:10:27-05:00 | first | backup download | gcp:p5-sachinJai123-000004",
+    "2026-11-02T13:10:52-05:00 | first | sshd DenyUsers blocks ops_cf7efc | gcp:p5-sachinJai123-000006",
+    "2026-11-02T13:34:49-05:00 | second | ops_cf7efc publickey login from internal 10.20.0.66 | gcp:p5-sachinJai123-000014",
+    "2026-11-02T13:34:53-05:00 | second | duplicated CRON[908] line left in local auth.log from botched cleanup | /var/log/auth.log:12",
+    "2026-11-02T13:35:45-05:00 | second | POST /upload.php | gcp:p5-sachinJai123-000017",
+    "2026-11-02T13:35:48-05:00 | second | GET uploaded PHP file | gcp:p5-sachinJai123-000018",
+    "2026-11-02T13:35:51-05:00 | second | happy runs useradd svc_b02878 (removed from local auth.log) | gcp:p5-sachinJai123-000019",
+    "2026-11-02T13:36:20-05:00 | second | svc_b02878 password login from 203.0.113.8 | gcp:p5-sachinJai123-000020",
+    "2026-11-02T13:36:40-05:00 | second | svc_b02878 runs cat /etc/shadow | gcp:p5-sachinJai123-000021",
+    "2026-11-02T13:37:00-05:00 | second | root runs meteor-cinder-blossom-1.sh | gcp:p5-sachinJai123-000022"
+  ]
+}
